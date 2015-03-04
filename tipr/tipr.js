@@ -32,7 +32,7 @@ http://www.tipue.com/tipr
                     
                          var w_t = $(tipr_cont).outerWidth();
                          var w_e = $(this).width();
-                         var m_l = (w_e / 2) - (w_t / 2);
+                         var m_l =  Math.abs((w_e / 2) - (w_t / 2));
                     
                          $(tipr_cont).css('margin-left', m_l + 'px');
                          $(this).removeAttr('title');
